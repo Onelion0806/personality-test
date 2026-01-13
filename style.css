@@ -1,0 +1,93 @@
+/* 基本設定：使用溫暖的人文感字體 */
+body {
+    background-color: #f5f2ed; /* 米色背景 */
+    color: #4a4a4a;
+    font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+}
+
+/* 圓角卡片設計 */
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* 柔和陰影 */
+    text-align: center;
+    transition: opacity 0.4s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+/* 進度條 */
+.progress-bar {
+    background-color: #e0e0e0;
+    height: 8px;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+#progress {
+    background-color: #a68b7c; /* 淺咖啡色 */
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+/* 按鈕樣式 */
+button {
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.primary-btn {
+    background-color: #a68b7c;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+}
+
+.primary-btn:active {
+    transform: scale(0.95); /* 點擊回饋 */
+}
+
+/* 選項按鈕組 */
+.options-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.option-btn {
+    background-color: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.option-btn:hover {
+    background-color: #f5f2ed;
+    border-color: #a68b7c;
+}
+
+.encourage-text {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 20px;
+    font-style: italic;
+}
