@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>探索內外向人格 | 心理測驗</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <section id="start-screen" class="card">
+            <h1>探索你的內外向人格</h1>
+            <p>透過 5 個日常情境，了解你獲取能量的方式。</p>
+            <button id="start-btn" class="primary-btn">開始測驗</button>
+        </section>
+
+        <section id="quiz-screen" class="card hidden">
+            <div class="progress-bar">
+                <div id="progress" style="width: 20%;"></div>
+            </div>
+            <div class="question-container">
+                <h2 id="question-text">題目載入中...</h2>
+                <div id="options-container" class="options-group">
+                    </div>
+            </div>
+        </section>
+
+        <section id="result-screen" class="card hidden">
+            <h2 id="result-title">你的測驗結果</h2>
+            <p id="result-desc"></p>
+            <p class="encourage-text">每種性格都有其獨特的魅力，享受最真實的自己。</p>
+            <button id="restart-btn" class="secondary-btn">重新測驗</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
